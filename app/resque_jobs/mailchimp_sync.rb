@@ -11,7 +11,6 @@ class MailchimpSync
 		elsif queue == 'activist_match'
 			self.perform_with_activist_match(id)
 		end
-
 	end
 
 	def self.perform_with_formEntry(form_entry_id)

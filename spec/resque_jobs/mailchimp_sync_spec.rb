@@ -96,7 +96,7 @@ RSpec.describe MailchimpSync, type: :resque_job do
 			it 'should be reput on queue' do
 				MailchimpSync.perform_with_activist_match 1
 
-	            expect(@activist_match).to have_received(:async_update_mailchimp).once
+				expect(@activist_match).to have_received(:async_update_mailchimp).once
 			end
 		end
 
@@ -109,7 +109,7 @@ RSpec.describe MailchimpSync, type: :resque_job do
 			it 'should be reput on queue' do
 				MailchimpSync.perform_with_activist_match 1
 
-	            expect(@activist_match).to have_received(:async_update_mailchimp).once
+        expect(@activist_match).to have_received(:async_update_mailchimp).once
 			end
 		end
 
@@ -122,7 +122,7 @@ RSpec.describe MailchimpSync, type: :resque_job do
 			it 'should be reput on queue' do
 				MailchimpSync.perform_with_activist_match 1
 
-	            expect(@activist_match).to have_received(:async_update_mailchimp).once
+	      expect(@activist_match).to have_received(:async_update_mailchimp).once
 			end
 		end
 	end

@@ -1,0 +1,13 @@
+LoadUnsynchronizedData:
+  # ***** You can use another sintax: 
+  # every: 
+  #   - "1d"
+  #   - :first_at: '0h'
+  cron: "0 0 * * *"
+  # You can specify timezone too
+  # cron: "0 0 * * * America/Sao_Paulo"
+  # More info:
+  #       about configuration: https://github.com/resque/resque-scheduler
+  #       about timezones: 
+  #             - https://en.wikipedia.org/wiki/America/Sao_Paulo
+  #             - https://en.wikipedia.org/wiki/Tz_database
